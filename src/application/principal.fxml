@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="120.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainCTR">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="226.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField id="txtUsuario" fx:id="txtUsuario" promptText="Digite seu usuário">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField id="txtSenha" fx:id="txtSenha" promptText="Digite sua senha">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="5.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox prefHeight="27.0" prefWidth="401.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnEntrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="ENTRAR">
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnSair" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="SAIR">
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label id="lblStatus" fx:id="lblStatus" alignment="TOP_CENTER" prefHeight="45.0" prefWidth="396.0">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
